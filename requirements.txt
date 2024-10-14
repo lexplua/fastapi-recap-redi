@@ -1,2 +1,7 @@
-fastapi[standard]
-pytest
+fastapi[standard]~=0.115.0
+pytest~=8.3.3
+sqlalchemy~=2.0.35
+psycopg2
+pydantic~=2.9.2
+python-dotenv~=1.0.1
+pytest-mock
