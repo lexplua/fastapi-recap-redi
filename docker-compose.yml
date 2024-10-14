@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:13
+    ports:
+      - "127.0.0.1:55433:5432"
+    environment:
+      POSTGRES_PASSWORD: test
+    volumes:
+      - ./books.sql:/docker-entrypoint-initdb.d/books.sql:ro
